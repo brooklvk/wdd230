@@ -1,7 +1,7 @@
 
 #content {
     max-width: 60%;
-    justify-items: center;
+    margin: 0 auto;
 }
 
 header {
@@ -13,6 +13,9 @@ header {
     color: white;
 }
 
+img {
+    width: 100px;
+}
 
 footer {
     text-align: center;
@@ -24,5 +27,5 @@ footer {
 }
 
 .p2 {
-    color: green;
+    color: rgb(80, 221, 80);
 }
