@@ -1,7 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Raleway&display=swap'); 
+
 #content {
     max-width: 60%;
     margin: 0 auto;
+    font-family: "Raleway", sans-serif;
 }
 
 header {
@@ -29,3 +32,4 @@ footer {
 .p2 {
     color: rgb(80, 221, 80);
 }
+
