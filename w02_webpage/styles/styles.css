@@ -13,7 +13,6 @@ header {
 
 main {
     display: flex;
-    justify-items: space-between;
     padding: 10px;
     margin: 5px;
 }
@@ -23,7 +22,7 @@ main p, a, img {
 }
 
 img {
-    width: 80%;
+    width: 85%;
 }
 
 #column1, #column2, #column3 {
@@ -31,7 +30,6 @@ img {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     background-color: lightgray;
-    margin: auto;
     margin-inline: 10px;
 }
 
@@ -50,4 +48,19 @@ footer {
     text-align: center;
     padding: 10px;
     margin: 5px;
+}
+
+@media screen and (max-width: 1100px) {
+    .column1, .column2 {
+        flex-grow: 1;
+    }
+    .column3 {
+        flex-grow: 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-wrap: wrap;
+    }
 }
