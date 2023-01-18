@@ -1,3 +1,1 @@
-
-document.querySelector (.p2 = "Last Updated: " + document.lastModified);
-
+document.querySelector(".p2");
