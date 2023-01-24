@@ -1,5 +1,23 @@
 
 /* CSS for all pages */
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16pt;
+}
 nav {
     display: flex;
+    background-color: darkslateblue;
 }
+.link {
+    color: white;
+    padding: 10px;
+}
+img {
+    display: block;
+    width: 150px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* CSS for index.html */
+
