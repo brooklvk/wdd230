@@ -18,3 +18,25 @@ img {
     padding: 20px;
     margin: 0 auto;
 }
+
+/* CSS for target-audience.html */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#audience {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#personas {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#scenarios {
+    grid-column: 2/3;
+}
