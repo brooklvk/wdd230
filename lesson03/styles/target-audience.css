@@ -20,23 +20,21 @@ img {
 }
 
 /* CSS for target-audience.html */
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 20px;
-}
 
 #audience {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    border: 5px solid rgb(171, 188, 203);
+    padding: 10px;
+    margin: 10px;
 }
 
 #personas {
-    grid-column: 1/2;
-    grid-row: 2/3;
+    border: 5px solid rgb(40, 62, 130);
+    padding: 10px;
+    margin: 10px;
 }
 
 #scenarios {
-    grid-column: 2/3;
+    border: 5px solid rgb(171, 211, 180);
+    padding: 10px;
+    margin: 10px;
 }
