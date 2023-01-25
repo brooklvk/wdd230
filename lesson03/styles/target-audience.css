@@ -4,9 +4,9 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 16pt;
 }
-nav {
+nav a {
     display: flex;
-    background-color: darkslateblue;
+    background-color: rgb(94, 66, 88);
 }
 .link {
     color: white;
