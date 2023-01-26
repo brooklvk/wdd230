@@ -1,4 +1,3 @@
-
 let year = new Date().getFullYear();
 document.querySelector("currentYear").textContent = year;
 
