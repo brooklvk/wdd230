@@ -4,12 +4,16 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 16pt;
 }
-nav a {
+nav {
     display: flex;
+    flex-direction: row;
     background-color: rgb(94, 66, 88);
+    justify-content: space-between;
 }
 .link {
+    display: block;
     color: white;
+    text-decoration: none;
     padding: 10px;
 }
 img {
@@ -19,5 +23,9 @@ img {
     margin: 0 auto;
 }
 
-/* CSS for index.html */
-
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
