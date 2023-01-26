@@ -6,6 +6,11 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 header {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -21,6 +26,8 @@ img {
 footer {
     text-align: center;
     background-color: rgb(57, 102, 170);
+    color: white;
+    padding: 10px;
 }
 
 .p1 {

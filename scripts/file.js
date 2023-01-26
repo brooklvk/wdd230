@@ -1,5 +1,5 @@
 
-let year = "numeric";
-document.getElementsByClassName("p1").textContent = new Date().toLocaleDateString("en-US", year);
+let year = new Date().getFullYear();
+document.querySelector("currentYear").textContent = year;
 
-let lastModif = new Date(document.lastModified);
+document.querySelector("lastModified").innerHTML = document.lastModified;
