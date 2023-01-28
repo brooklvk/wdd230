@@ -44,7 +44,6 @@ img {
 
 @media screen and (max-width: 600px) {
     nav {
-        display: flex;
         flex-direction: column;
     }
 }
