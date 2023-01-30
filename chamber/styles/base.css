@@ -169,7 +169,7 @@ main {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
     }
 
     #hero, #news, #events, #weather, #join, #spotlights {
@@ -187,23 +187,23 @@ main {
     }
     
     #events {
-        grid-column: 3/4;
+        grid-column: 2/3;
         grid-row: 2/4;
     }
     
     #weather {
-        grid-column: 2/3;
-        grid-row: 4/6;
+        grid-column: 3/4;
+        grid-row: 2/4;
     }
     
     #join {
-        grid-column: 2/3;
-        grid-row: 6/7;
+        grid-column: 1/4;
+        grid-row: 4/5;
     }
     
     #spotlights {
-        grid-column: 1/2;
-        grid-row: 4/7;
+        grid-column: 1/4;
+        grid-row: 5/6;
     }
 
     footer {
