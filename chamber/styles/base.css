@@ -174,13 +174,17 @@ main {
 @media screen and (min-width: 950px) {
     /* large view -- with all links */
 
+    .icon {
+        display: none;
+    }
+
     .topnav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-/* 
-    .link {
+
+    .link-home, .link {
         color: white;
         text-decoration: none;
         padding: 10px;
@@ -201,7 +205,7 @@ main {
     .social:hover {
         background-color: rgb(94, 66, 88);
         color: white;
-    } */
+    }
 
     main {
         display: grid;
