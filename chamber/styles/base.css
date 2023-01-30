@@ -37,11 +37,21 @@ nav {
     padding: 10px;
 }
 
+.link:hover {
+    background-color: rgb(171, 188, 203);
+    color: black;
+}
+
 .social {
     background-color: rgb(171, 188, 203);
     color: black;
     text-decoration: none;
     padding: 10px;
+}
+
+.social:hover {
+    background-color: rgb(94, 66, 88);
+    color: white;
 }
 
 .date {
@@ -55,14 +65,16 @@ nav {
 /* footer css */
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: rgb(94, 66, 88);
     color: white;
+    text-align: center;
 }
 
 .logo-f {
     width: 75px;
     padding: 20px;
+    margin: 0 auto;
 }
 
 
@@ -83,8 +95,22 @@ main {
 
 /* small view -- with hamburger and home link */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
     /* medium view -- with hamburger and some links */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        text-align: justify;
+    }
+
+    .info {
+        grid-column: 1/2;
+    }
+    
+    .base {
+        grid-column: 2/3;
+    }
 }
 
 @media screen and (min-width: 950px) {
@@ -132,4 +158,18 @@ main {
         grid-column: 1/2;
         grid-row: 4/7;
     }
+
+    footer {
+        display: flex;
+    }
+
+    .info, .base {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info p, .base p {
+        padding: 10px;
+    }
+
 }
