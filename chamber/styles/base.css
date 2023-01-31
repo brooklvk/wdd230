@@ -25,19 +25,25 @@ body {
     text-align: center;
 }
 
+.icon {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
 nav {
     display: flex;
     flex-direction: column;
     background-color: rgb(94, 66, 88);
 }
 
-.link {
+.link, .link-home {
     color: white;
     text-decoration: none;
     padding: 10px;
 }
 
-.link:hover {
+.link:hover, .link-home:hover {
     background-color: rgb(171, 188, 203);
     color: black;
 }
@@ -96,7 +102,13 @@ main {
 /* small view -- with hamburger and home link */
 
 @media screen and (min-width: 650px) {
-    /* medium view -- with hamburger and some links */
+    /* medium view -- with hamburger and links */
+
+    .icon {
+        display: block;
+        padding: 10px;
+        color: white;
+    }
 
     nav {
         display: flex;
@@ -165,6 +177,11 @@ main {
 
 @media screen and (min-width: 950px) {
     /* large view -- with all links */
+
+    .icon {
+        display: none;
+    }
+
     nav {
         display: flex;
         flex-direction: row;
