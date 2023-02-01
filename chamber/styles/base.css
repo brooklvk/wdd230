@@ -18,6 +18,15 @@ body {
     font-size: 14pt;
 }
 
+#message {
+    display: none;
+    background-color: rgb(40, 62, 130);
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
 .logo-h {
     display: block;
     width: 150px;
@@ -120,14 +129,6 @@ footer {
 main {
     display: flex;
     flex-direction: column;
-}
-
-#meeting {
-    /* display: none; */
-    background-color: rgb(40, 62, 130);
-    color: white;
-    padding: 10px;
-    margin: 10px 0;
 }
 
 #hero {
@@ -255,7 +256,7 @@ main {
         grid-template-rows: repeat(6, 1fr);
     }
 
-    #meeting {
+    #message {
         
     }
 

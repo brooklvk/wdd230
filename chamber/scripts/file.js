@@ -1,5 +1,5 @@
 
-//Hamburger menu in nav 
+// Hamburger menu in nav 
 const nav = document.querySelector(".navigation");
 const icon = document.querySelector(".menu");
 
@@ -16,3 +16,9 @@ document.querySelector("#currentYear").textContent = year;
 
 // Last Modified in footer 
 document.querySelector("#lastModified").innerHTML = document.lastModified;
+
+
+// Message banner above header 
+if (now.getDay() == 1 || now.getDay() == 2) {
+    document.querySelector("#message").style.display = "block";
+}
