@@ -5,7 +5,6 @@ const icon = document.querySelector(".menu");
 
 icon.addEventListener("click", () => {nav.classList.toggle("responsive")}, false);
 
-
 // Date in header 
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(now);
