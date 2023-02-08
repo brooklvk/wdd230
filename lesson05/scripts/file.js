@@ -11,30 +11,30 @@ button.onclick = function() {
     let chapter = input.value;
     if (chapter != "") {
         // create an li element 
-        const listChapter = document.createElement("li");
-        const listSpan = document.createElement("span");
+        const li = document.createElement("li");
+        const liSpan = document.createElement("span");
 
         // create a delete button
         const deleteButton = document.createElement("button");
 
-        listChapter.appendChild(listSpan);
+        li.appendChild(liSpan);
 
         // populate the li elements textContent or innerHTML with the input
-        listSpan.textContent = chapter;
+        liSpan.textContent = chapter;
 
         // append the li element with the delete button
-        listChapter.appendChild(deleteButton);
+        li.appendChild(deleteButton);
 
         // populate the button textContent with an X
         deleteButton.textContent = "X";
 
         // append the list element with the li element just created and appended with text and the delete button
-        list.appendChild(listChapter);
+        list.appendChild(li);
 
 
         // add an event listener to the delete button that removes the li element when clicked
         deleteButton.onclick = function(e) 
-        {list.removeChild(listChapter)}
+        {list.removeChild(li)}
 
         // send the focus to the input element
         input.value = "";
