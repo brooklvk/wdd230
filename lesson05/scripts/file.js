@@ -21,8 +21,14 @@ button.onclick = function() {
 
         // populate the li elements textContent or innerHTML with the input
         listSpan.textContent = chapter;
+
+        // append the li element with the delete button
         listChapter.appendChild(deleteButton);
+
+        // populate the button textContent with an X
         deleteButton.textContent = "X";
+
+        // append the list element with the li element just created and appended with text and the delete button
         list.appendChild(listChapter);
 
 
@@ -30,17 +36,8 @@ button.onclick = function() {
         deleteButton.onclick = function(e) 
         {list.removeChild(listChapter)}
 
-        
-        // populate the button textContent with an X
-
-        // append the li element with the delete button
-        
-
-        // append the list element with the li element just created and appended with text and the delete button
-        
-
         // send the focus to the input element
-        // input.value = "";
+        input.value = "";
     }
     input.focus();
 }
