@@ -19,6 +19,7 @@ document.querySelector("#lastModified").innerHTML = document.lastModified;
 
 
 // Message banner above header 
-if (now.getDay() == 1 || now.getDay() == 3) {
+const day = now.getDay();
+if (day == 1 || day == 3) {
     document.querySelector("#message").style.display = "block";
 }

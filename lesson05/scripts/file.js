@@ -1,32 +1,46 @@
 
-const input = document.querySelector(input.value);
+const input = document.querySelector("input");
 
-const button = document.querySelector(button);
+const button = document.querySelector("button");
 
 const list = document.querySelector("#list");
 
 
-button.addEventListener('click', function() {
+button.onclick = function() {
     // make sure the input is not blank before doing the following remaining tasks in this list
-    if (input == "") {
+    let chapter = input.value;
+    if (chapter != "") {
         // create an li element 
-        // populate the li elements textContent or innerHTML with the input
-        const li = document.createElement(li).textContent = input;
+        const listChapter = document.createElement("li");
+        const listSpan = document.createElement("span");
 
         // create a delete button
-        // populate the button textContent with an X
-        const deleteButton = document.createElement(button).textContent = "X";
+        const deleteButton = document.createElement("button");
 
-        // append the li element with the delete button
-        li.append(deleteButton);
+        listChapter.appendChild(listSpan);
 
-        // append the list element with the li element just created and appended with text and the delete button
-        list.appendChild(li);
+        // populate the li elements textContent or innerHTML with the input
+        listSpan.textContent = chapter;
+        listChapter.appendChild(deleteButton);
+        deleteButton.textContent = "X";
+        list.appendChild(listChapter);
+
 
         // add an event listener to the delete button that removes the li element when clicked
-        deleteButton.addEventListener("click", () => list.removeChild(li))
+        deleteButton.onclick = function(e) 
+        {list.removeChild(listChapter)}
+
+        
+        // populate the button textContent with an X
+
+        // append the li element with the delete button
+        
+
+        // append the list element with the li element just created and appended with text and the delete button
+        
 
         // send the focus to the input element
-        input.focus();
+        // input.value = "";
     }
-})
+    input.focus();
+}
