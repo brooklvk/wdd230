@@ -267,10 +267,6 @@ main {
         grid-template-columns: 1fr 1fr;
     }
 
-    #message {
-        
-    }
-
     #hero, #news, #events, #weather, #join, #spotlights {
         margin: 10px;
     }
