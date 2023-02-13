@@ -3,5 +3,31 @@
 // either calculate and display the wind chill factor value or display "N/A" (not applicable) if the input values did not meet the requirements.
 
 const temperature = document.querySelector("#temperature");
-const windSpeed = document.querySelector("#wind-speed");
+parseInt(temperature);
 
+const windSpeed = document.querySelector("#wind-speed");
+parseInt(windSpeed);
+
+if (temperature <= 50) {
+
+    if (windSpeed > 3) {
+
+        const windChill = 35.74 + 0.6215 * temperature - 35.75 * windSpeed ** 0.16 + 0.4275 * temperature * windSpeed ** 0.16;
+        document.querySelector("#wind-chill").textContent = windChill;
+
+    }
+
+    else {
+
+        const windChill = "N/A";
+        document.querySelector("#wind-chill").textContent = windChill;
+
+    }
+}
+
+else {
+
+    const windChill = "N/A";
+    document.querySelector("#wind-chill").textContent = windChill;
+
+}
