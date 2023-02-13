@@ -39,7 +39,12 @@
     </header>
     <main>
         <div id="hero">
-            <img src="images/hero.webp" alt="background image. wood fence">
+            <!-- <img src="images/hero.webp" alt="background image. wood fence"> -->
+            <picture>
+                <source media="(min-width:950px)" srcset="images/wdd230-large.jpg">
+                <source media="(min-width:730px)" srcset="images/wdd230-medium.jpg">
+                <img src="images/wdd230-small.jpg" alt="background image. business people" style="width:auto;">
+              </picture>
             <p>Join the chamber</p>
             <p>to connect with other business owners, attend networking <br> and other exclusive events, 
                 and explore our resources!
