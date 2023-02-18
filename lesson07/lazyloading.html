@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson 07 Lazy Loading Practice Page">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Lazy Loading</title>
+</head>
+<body>
+    <h1>Progressive Loading Practice</h1>
+    <div class="pictures">
+    <picture>
+        <img src="images/placeholder.jpg" data-src="images/calf-brown.jpg" 
+        loading="lazy" alt="brown calf">
+    </picture>
+    <picture>
+        <img src="images/placeholder.jpg" data-src="images/cow-brown.jpg"
+        loading="lazy" alt="brown cow">
+    </picture>
+    <picture>
+        <img src="images/placeholder.jpg" data-src="images/cow-highland.jpg"
+        loading="lazy" alt="highland cow">
+    </picture>
+    <picture>
+        <img src="images/placeholder.jpg" data-src="images/cow-horns.jpg"
+        loading="lazy" alt="cow with horns">
+    </picture>
+    <picture>
+        <img src="images/placeholder.jpg" data-src="images/cow-nose.jpg"
+        loading="lazy" alt="cow nose">
+    </picture>
+    <picture>
+        <img src="images/placeholder.jpg" data-src="images/cow-white.jpg"
+        loading="lazy" alt="white cow">
+    </picture>
+    </div>
+    <script src="scripts/main.js" defer></script>
+</body>
+</html>
