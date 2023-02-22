@@ -23,3 +23,46 @@ const day = now.getDay();
 if (day == 1 || day == 2) {
     document.querySelector("#message").style.display = "block";
 }
+
+// Lazy loading js
+let imagesToLoad = document.querySelectorAll("img[data-src]");
+const loadImages = (image) => {
+  image.setAttribute("src", image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute("data-src");
+  };
+};
+
+if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+      items.forEach((item) => {
+        if (item.isIntersecting) {
+          loadImages(item.target);
+          observer.unobserve(item.target);
+        }
+      });
+    });
+    imagesToLoad.forEach((img) => {
+      observer.observe(img);
+    });
+  } else {
+    imagesToLoad.forEach((img) => {
+      loadImages(img);
+    });
+  }
+
+
+// Visit message 
+var numberOfVisits = localStorage.getItem("numberOfVisits");
+
+if (!numberOfVisits) {
+    numberOfVisits = 0;
+}
+
+numberOfVisits = +numberOfVisits + 1; 
+
+localStorage.setItem("numberOfVisits", numberOfVisits);
+document.querySelector("#visit").innerHTML = numberOfVisits;
+
+
+// localStorage.setItem("numberOfVisits", 0);

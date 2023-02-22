@@ -124,14 +124,14 @@ footer {
     margin: 0 auto;
 }
 
-
-/* CSS for index.html */
 /* main css */
 
 main {
     display: flex;
     flex-direction: column;
 }
+
+/* CSS for index.html */
 
 #hero {
     background-color: rgb(171, 211, 180);
@@ -241,6 +241,31 @@ main {
     text-align: center;
 }
 
+
+/* CSS for discover.html */
+.visit-msg {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.images img {
+    border: 5px solid black;
+    padding: 5px;
+    margin: 20px;
+}
+
+.images img:hover {
+    border: 10px solid rgb(80, 16, 55);
+    padding: 10px;
+}
+
+
 @media only screen and (min-width: 730px) {
     /* medium view -- with hamburger and links */
 
@@ -261,8 +286,7 @@ main {
     }
 
     main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: block;
     }
 
     #hero, #news, #events, #weather, #join, #spotlights {
@@ -270,6 +294,8 @@ main {
     }
     
     #hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         grid-column: 1/3;
     }
 
@@ -349,7 +375,7 @@ main {
 	}
 
     main {
-        grid-template-columns: 1fr 1fr 1fr;
+        display: block;
     }
 
     #hero, #news, #events, #weather, #join, #spotlights {
@@ -357,6 +383,7 @@ main {
     }
     
     #hero {
+        grid-template-columns: 1fr 1fr 1fr;
         grid-column: 1/4;
     }
 
@@ -397,4 +424,8 @@ main {
         padding: 10px;
     }
 
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
 }
