@@ -241,8 +241,6 @@ main {
     text-align: center;
 }
 
-/* small view -- with hamburger and home link */
-
 @media only screen and (min-width: 730px) {
     /* medium view -- with hamburger and links */
 
