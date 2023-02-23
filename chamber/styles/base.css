@@ -315,6 +315,11 @@ main {
         grid-column: 1/2;
     }
 
+    .images {
+        width: 70%;
+        margin: 0 auto;
+    }
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -427,5 +432,7 @@ main {
     .images {
         display: flex;
         flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
     }
 }
