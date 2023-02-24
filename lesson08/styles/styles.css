@@ -1,1 +1,24 @@
 
+#title {
+    background-color: black;
+    color: white;
+}
+
+#services {
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+
+#empty {
+    background-color: black;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: lightgray;
+}
+
+td {
+    padding: 15px;
+    margin: 0;
+}
+
