@@ -255,6 +255,8 @@ main {
 }
 
 .images img {
+    width: 100%;
+    height: auto;
     border: 5px solid black;
     padding: 5px;
     margin: 20px;
@@ -315,9 +317,12 @@ main {
         margin: 0 auto;
     }
 
+    .images img {
+        transition: transform .2s;
+    }
+
     .images img:hover {
-        border: 10px solid rgb(80, 16, 55);
-        padding: 10px;
+        transform: scale(1.5);
     }
 
     footer {
@@ -436,8 +441,11 @@ main {
         margin: 0 auto;
     }
     
+    .images img {
+        transition: transform .2s;
+    }
+
     .images img:hover {
-        border: 10px solid rgb(80, 16, 55);
-        padding: 10px;
+        transform: scale(1.1);
     }
 }
