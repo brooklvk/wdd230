@@ -15,7 +15,7 @@
 /* CSS for all pages */
 body {
     font-family: 'Raleway', sans-serif;
-    font-size: 14pt;
+    font-size: 16pt;
 }
 
 #message {
@@ -32,7 +32,7 @@ body {
 }
 
 .logo-h {
-    width: 150px;
+    width: 100px;
     padding: 20px;
     margin: 0 auto;
 }
@@ -119,7 +119,7 @@ footer {
 }
 
 .logo-f {
-    width: 75px;
+    width: 100px;
     padding: 20px;
     margin: 0 auto;
 }
@@ -263,11 +263,58 @@ main {
 }
 
 
+/* CSS for join.html */
+
+#join-msg {
+    text-align: center;
+}
+
+fieldset {
+    width: 50%;
+    margin: 20px auto;
+}
+
+form label.style1, form div, form input {
+    --webkit-appearance: none;
+    display: block;
+}
+
+form input {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16pt;
+    padding: 5px;
+    margin: 10px;
+}
+
+form label.radio {
+    display: flex;
+    flex-direction: row;
+}
+
+form label.style1 input:required {
+    border-left: red solid 6px;
+}
+
+form label.style1 input:required:valid {
+    border-left: green solid 6px;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: darkred;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+
 @media only screen and (min-width: 730px) {
     /* medium view -- with hamburger and links */
 
     .logo-h {
-        width: 150px;
+        width: 120px;
+        height: auto;
         padding: 20px;
         margin: 0 auto;
     }
@@ -355,6 +402,7 @@ main {
     
     .logo-h {
         width: 200px;
+        height: auto;
         padding: 30px;
         margin: 0 10%;
     }

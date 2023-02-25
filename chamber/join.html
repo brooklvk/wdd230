@@ -15,15 +15,81 @@
 </head>
 <body>
     <header>
-
+        <div id="message">
+            <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        </div>
+        <header>
+            <div class="top">
+                <img class="logo-h" src="images/logo.jpg" alt="logo with text: Manassa Chamber of Commerce">
+                <h1 class="title">Manassa Chamber of Commerce</h1>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a class="menu" href="#"></a></li>
+                    <li><a class="link" href="index.html">Home</a></li>
+                    <li><a class="link" href="discover.html">Discover</a></li>
+                    <li><a class="link" href="">Resources</a></li>
+                    <li><a class="link" href="">Join</a></li>
+                    <li><a class="link" href="">Contact</a></li>
+                    <li><a class="social" href="instagram.com">Instagram</a></li>
+                    <li><a class="social" href="facebook.com">Facebook</a></li>
+                </ul>
+            </nav>
+            <p class="date"></p>
+        </header>
     </header>
     <main>
+        <h1 id="join-msg">Join the Chamber of Commerce!</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="style1">First Name* <input type="text" name="fname" required></label>
+                <label class="style1">Last Name* <input type="text" name="lname" required></label>
+                <label class="style1">Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                <label class="style1">Phone Number* <input type="tel" name="phone" required></label>
+                <label class="style1">Business Position <input type="text" name="position" pattern=""></label>
+        
+            </fieldset>
+
+            <fieldset>
+                <legend>Business Information</legend>
+                <label class="style1">Business Name* <input type="text" name="business" required></label>
+                <label class="style1">Business Description <input type="textarea" name="description"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership</legend>
+                <div>Membership Level* </div>
+                <label class="radio"><input type="radio" name="membership" value="np">NP Membership</label>
+                <label class="radio"><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                <label class="radio"><input type="radio" name="membership" value="silver">Silver Membership</label>
+                <label class="radio"><input type="radio" name="membership" value="gold">Gold Membership</label>
+            </fieldset>
+
+            <input class="date-time" type="hidden" name="datetime" value="datetime">
+
+            <input class="submitBtn" type="submit" name="submit" value="Join the Chamber"> 
+        </form>
 
     </main>
     <footer>
-
+        <img class="logo-f" src="images/logo.jpg" alt="logo with text: Manassa Chamber of Commerce">
+        <div class="info">
+            <p>Our address: 
+                <br>123 Main St
+                <br>Manassa CO 81141
+            </p>
+            <p>Our email: chamberofcommerce@ not a real email. com</p>
+            <p>Our phone number: 000-000-0000</p>
+            <p>Location Map</p>
+        </div>
+        <div class="base">
+            <p>&copy; <span id="currentYear"></span> Manassa Chamber</p>
+            <p>Brooklyn V. Sowards</p>
+            <p>WDD230 Project</p> 
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
     </footer>
-
 <script src="scripts/main.js"></script>
 <script src="scripts/windchill.js"></script>
 </body>

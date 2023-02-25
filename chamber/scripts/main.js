@@ -33,5 +33,5 @@ localStorage.setItem("difference", difference);
 
 document.querySelector("#visit").innerHTML = difference;
 
-
 //localStorage.setItem("numberOfVisits", 0);
+
