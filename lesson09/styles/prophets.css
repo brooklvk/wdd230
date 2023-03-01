@@ -20,8 +20,8 @@ img {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5px;
 }
 
 section {
@@ -36,6 +36,7 @@ section {
 }
 
 
+/* 
 @media screen and (max-width: 1500px) {
     img {
         width: 300px;
@@ -66,4 +67,4 @@ section {
     section {
         width: 80%;
     }
-}
+} */
