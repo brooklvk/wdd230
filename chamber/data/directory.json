@@ -1,0 +1,77 @@
+
+{
+    "companies": [
+        {
+            "name": "Company1",
+            "address": "123 Main",
+            "phone": "333-333-3333",
+            "url": "weburl",
+            "img": "image file name",
+            "membership": "Bronze"
+        }, 
+        {
+            "name": "Company2",
+            "address": "123 Main",
+            "phone": "333-333-3333",
+            "url": "weburl",
+            "img": "image file name",
+            "membership": "NP"
+        }, 
+        {
+            "name": "Company3",
+            "address": "123 Main",
+            "phone": "333-333-3333",
+            "url": "weburl",
+            "img": "image file name",
+            "membership": "Gold"
+        },
+        {
+            "name": "Company4",
+            "address": "123 Main",
+            "phone": "333-333-3333",
+            "url": "weburl",
+            "img": "image file name",
+            "membership": "Gold"
+        },
+        {
+            "name": "Company5",
+            "address": "123 Main",
+            "phone": "333-333-3333",
+            "url": "weburl",
+            "img": "image file name",
+            "membership": "Silver"
+        },
+        {
+            "name": "Company6",
+            "address": "123 Main",
+            "phone": "333-333-3333",
+            "url": "weburl",
+            "img": "image file name",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Company7",
+            "address": "123 Main",
+            "phone": "333-333-3333",
+            "url": "weburl",
+            "img": "image file name",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Company8",
+            "address": "123 Main",
+            "phone": "333-333-3333",
+            "url": "weburl",
+            "img": "image file name",
+            "membership": "NP"
+        },
+        {
+            "name": "Company9",
+            "address": "123 Main",
+            "phone": "333-333-3333",
+            "url": "weburl",
+            "img": "image file name",
+            "membership": "Gold"
+        }
+    ]
+}
