@@ -4,7 +4,7 @@ const directory = `https://brooklvk.github.io/wdd230/chamber/data/directory.json
 async function getBusinessData() {
     const response = await fetch(directory);
     const data = await response.json();
-    //console.table(data.businesses); 
+    console.table(data.businesses); 
     displayBusinesses(data.businesses);
 }
 
