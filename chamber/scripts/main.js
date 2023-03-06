@@ -23,15 +23,3 @@ const day = now.getDay();
 if (day == 1 || day == 2) {
     document.querySelector("#message").style.display = "block";
 }
-
-// Visit message 
-let visit = Date.now().getMinutes();
-localStorage.setItem("visit", visit);
-
-let difference = Date.now().getMinutes() - visit;
-localStorage.setItem("difference", difference);
-
-document.querySelector("#visit").innerHTML = difference;
-
-//localStorage.setItem("numberOfVisits", 0);
-
