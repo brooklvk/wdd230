@@ -1,0 +1,23 @@
+
+openweather .org
+
+API key 
+f3e31394eb86ed958067f299ae42b4c7
+
+How to Start
+https://openweathermap.org/appid#use
+
+How to Call
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key} 
+
+https://api.openweathermap.org/data/2.5/weather?q={city name},{country code}&appid={API key}
+
+https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={API key}
+
+
+
+built in 
+https://openweathermap.org/current#builtin
+
+weather map 
+https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=30&lon=-20&zoom=5
