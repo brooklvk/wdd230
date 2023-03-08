@@ -15,7 +15,7 @@
             "phone": "719-843-5500",
             "url": "weburl",
             "img": "image url",
-            "membership": "NP"
+            "membership": "Silver"
         }, 
         {
             "name": "Standard Service Gas Station",
@@ -63,7 +63,7 @@
             "phone": "333-333-3333",
             "url": "weburl",
             "img": "image url",
-            "membership": "NP"
+            "membership": "Bronze"
         },
         {
             "name": "Subway",
