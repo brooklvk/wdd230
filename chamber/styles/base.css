@@ -26,12 +26,12 @@ body {
     text-align: center;
 }
 
-.top {
-    display: flex;
-}
+/* .top {
+    
+} */
 
 .logo-h {
-    width: 100px;
+    width: auto;
     height: auto;
     padding: 20px;
     margin: 0 auto;
@@ -148,13 +148,12 @@ main {
     width: 100%;
 }
 
-#hero p:first-of-type {
+#hero p:nth-of-type(1) {
     font-size: 2em;
     text-align: center;
 }
 
-#hero p:last-of-type {
-    font-size: 1.5em;
+#hero p:nth-of-type(2) {
     text-align: center;
 }
 
