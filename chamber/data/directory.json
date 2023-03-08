@@ -2,7 +2,7 @@
 {
     "businesses": [
         {
-            "name": "Business1",
+            "name": "USPS Post Office",
             "address": "123 Main",
             "phone": "333-333-3333",
             "url": "weburl",
@@ -10,7 +10,7 @@
             "membership": "Bronze"
         }, 
         {
-            "name": "Business2",
+            "name": "Val's Restaurant",
             "address": "123 Main",
             "phone": "333-333-3333",
             "url": "weburl",
@@ -18,7 +18,7 @@
             "membership": "NP"
         }, 
         {
-            "name": "Business3",
+            "name": "Standard Service Gas Station",
             "address": "123 Main",
             "phone": "333-333-3333",
             "url": "weburl",
@@ -26,7 +26,7 @@
             "membership": "Gold"
         },
         {
-            "name": "Business4",
+            "name": "Auto Shop",
             "address": "123 Main",
             "phone": "333-333-3333",
             "url": "weburl",
@@ -34,7 +34,7 @@
             "membership": "Gold"
         },
         {
-            "name": "Business5",
+            "name": "Dollar General",
             "address": "123 Main",
             "phone": "333-333-3333",
             "url": "weburl",
@@ -42,7 +42,7 @@
             "membership": "Silver"
         },
         {
-            "name": "Business6",
+            "name": "Jewelry Store",
             "address": "123 Main",
             "phone": "333-333-3333",
             "url": "weburl",
@@ -50,7 +50,7 @@
             "membership": "Bronze"
         },
         {
-            "name": "Business7",
+            "name": "Manassa Market",
             "address": "123 Main",
             "phone": "333-333-3333",
             "url": "weburl",
@@ -58,7 +58,7 @@
             "membership": "Bronze"
         },
         {
-            "name": "Business8",
+            "name": "Dance Studio",
             "address": "123 Main",
             "phone": "333-333-3333",
             "url": "weburl",
@@ -66,7 +66,7 @@
             "membership": "NP"
         },
         {
-            "name": "Business9",
+            "name": "Subway",
             "address": "123 Main",
             "phone": "333-333-3333",
             "url": "weburl",
