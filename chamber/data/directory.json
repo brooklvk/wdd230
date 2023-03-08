@@ -3,24 +3,24 @@
     "businesses": [
         {
             "name": "USPS Post Office",
-            "address": "123 Main",
-            "phone": "333-333-3333",
+            "address": "413 Main",
+            "phone": "800-275-8777",
             "url": "weburl",
             "img": "image url",
             "membership": "Bronze"
         }, 
         {
             "name": "Val's Restaurant",
-            "address": "123 Main",
-            "phone": "333-333-3333",
+            "address": "501 Main",
+            "phone": "719-843-5500",
             "url": "weburl",
             "img": "image url",
             "membership": "NP"
         }, 
         {
             "name": "Standard Service Gas Station",
-            "address": "123 Main",
-            "phone": "333-333-3333",
+            "address": "418 Main",
+            "phone": "719-843-5880",
             "url": "weburl",
             "img": "image url",
             "membership": "Gold"
