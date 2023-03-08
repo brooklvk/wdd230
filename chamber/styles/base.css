@@ -323,17 +323,6 @@ section {
     padding: 10px;
 }
 
-/* CSS for weather-api.html */
-
-.weather-api {
-    text-align: center;
-    padding: 30px;
-}
-
-#weather-icon {
-    width: 80px;
-    height: auto;
-}
 
 @media only screen and (min-width: 730px) {
     /* medium view -- with hamburger and links */
