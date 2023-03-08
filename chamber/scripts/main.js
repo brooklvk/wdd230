@@ -17,7 +17,6 @@ document.querySelector("#currentYear").textContent = year;
 // Last Modified in footer 
 document.querySelector("#lastModified").innerHTML = document.lastModified;
 
-
 // Message banner above header 
 const day = now.getDay();
 if (day == 1 || day == 2) {
