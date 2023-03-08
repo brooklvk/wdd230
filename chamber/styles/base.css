@@ -322,10 +322,14 @@ section {
     grid-auto-flow: row;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
     border: 2px solid black;
     margin: 10px auto;
     padding: 10px;
+}
+
+section img {
+    margin: 0 auto;
 }
 
 
