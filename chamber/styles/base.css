@@ -4,7 +4,7 @@
     background-color: rgb(171, 188, 203);
     color: black;
     GREEN
-    background-color: rgb(171, 211, 180);
+    background-color: rgb(39, 64, 45);
     color: black;
     DK-BLUE
     background-color: rgb(40, 62, 130);
@@ -137,10 +137,12 @@ main {
 }
 
 /* CSS for index.html */
-#hero {
-    background-color: rgb(171, 211, 180);
+
+#hero, #news, #events, #weather, #join, #spotlights {
+    background-color: rgb(171, 188, 203);
     color: black;
-    padding: 0px;
+    text-align: center;
+    padding: 10px;
     margin: 10px 0;
 }
 
@@ -148,102 +150,15 @@ main {
     width: 100%;
 }
 
-#hero p:nth-of-type(1) {
-    font-size: 2em;
-    text-align: center;
-}
-
-#hero p:nth-of-type(2) {
-    text-align: center;
-}
-
-#news {
-    background-color: rgb(171, 188, 203);
-    color: black;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-#news p:first-of-type {
-    font-size: 1.5em;
-    text-align: center;
-}
-
-#news p:last-of-type {
-    font-size: 1em;
-    text-align: center;
-}
-
-#events {
-    background-color: rgb(171, 188, 203);
-    color: black;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-#events p:first-of-type {
-    font-size: 1.5em;
-    text-align: center;
-}
-
-#events p:last-of-type {
-    font-size: 1em;
-    text-align: center;
-}
-
-#weather {
-    background-color: rgb(171, 188, 203);
-    color: black;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-#weather p:first-of-type {
-    font-size: 1.5em;
-    text-align: center;
-}
-
-#weather p:last-of-type {
-    font-size: 1em;
-    text-align: center;
-}
-
-#join {
-    background-color: rgb(171, 211, 180);
-    padding: 10px;
-    margin: 10px 0;
-}
-
-#join p:first-of-type {
-    font-size: 1.5em;
-    text-align: center;
-}
-
-#join p:last-of-type {
-    font-size: 1em;
-    text-align: center;
-}
-
-#spotlights {
-    background-color: rgb(171, 188, 203);
-    color: black;
+#weather-icon {
+    width: 80px;
+    height: auto;
 }
 
 #spotlight1, #spotlight2, #spotlight3 {
     padding: 10px;
     margin: 10px 0;
 }
-
-#spotlight1, #spotlight2, #spotlight3 p:first-of-type {
-    font-size: 1em;
-    text-align: center;
-}
-
-#spotlight1, #spotlight2, #spotlight3 p:last-of-type {
-    font-size: 1em;
-    text-align: center;
-}
-
 
 /* CSS for discover.html */
 .visit-msg {
