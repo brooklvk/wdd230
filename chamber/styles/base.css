@@ -5,7 +5,7 @@
     color: black;
     GREEN
     background-color: rgb(39, 64, 45);
-    color: black;
+    color: white;
     DK-BLUE
     background-color: rgb(40, 62, 130);
     color: white;
@@ -112,7 +112,7 @@ nav {
 footer {
     display: flex;
     flex-direction: column;
-    background-color: rgb(94, 66, 88);
+    background-color: rgb(39, 64, 45);
     color: white;
     text-align: center;
 }
