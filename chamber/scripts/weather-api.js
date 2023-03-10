@@ -1,6 +1,6 @@
 
 const temperature = document.querySelector('#temperature');
-const icon = document.querySelector('#weather-icon');
+const weatherIcon = document.querySelector('#weather-icon');
 const caption = document.querySelector('figcaption');
 const windSpeed = document.querySelector('#wind-speed');
 const windChill = document.querySelector('#wind-chill');
@@ -12,7 +12,7 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            //console.log(data); 
+            console.log(data); 
             displayResults(data);
         } 
         else {
@@ -22,7 +22,7 @@ async function apiFetch() {
     catch (error) {
         console.log(error);
     }
-  }
+}
 
 function displayResults(weatherData) {
     const temp = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
@@ -33,8 +33,8 @@ function displayResults(weatherData) {
 
     const src = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
-    icon.setAttribute('src', src);
-    icon.setAttribute('alt', desc);
+    weatherIcon.setAttribute('src', src);
+    weatherIcon.setAttribute('alt', desc);
     caption.textContent = desc;
 
     let chill = "N/A";
