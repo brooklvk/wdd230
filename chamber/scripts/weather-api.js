@@ -1,7 +1,7 @@
 
-const currentTemp = document.querySelector('#temperature');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const temperature = document.querySelector('#temperature');
+const icon = document.querySelector('#weather-icon');
+const caption = document.querySelector('figcaption');
 const windSpeed = document.querySelector('#wind-speed');
 const windChill = document.querySelector('#wind-chill');
 
@@ -25,22 +25,23 @@ async function apiFetch() {
   }
 
 function displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    const temp = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    temperature.innerHTML = temp;
 
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const speed = weatherData.wind.speed;
+    windSpeed.innerHTML = speed;
+
+    const src = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
+    icon.setAttribute('src', src);
+    icon.setAttribute('alt', desc);
+    caption.textContent = desc;
 
-    windSpeed.innerHTML = weatherData.wind.speed;
-       
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
-
-    let windChill = "N/A";
+    let chill = "N/A";
     if (temp <= 50 && speed > 3) {
-        windChill = (35.74 + 0.6215 * temp - 35.75 * speed ** 0.16 + 0.4275 * temp * speed ** 0.16);
+        chill = (35.74 + 0.6215 * temp - 35.75 * speed ** 0.16 + 0.4275 * temp * speed ** 0.16);
     }
-    document.querySelector("#wind-chill").textContent = windChill;
+    windChill.textContent = chill;
 }
 
 apiFetch();
