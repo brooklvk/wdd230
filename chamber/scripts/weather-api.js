@@ -2,6 +2,7 @@
 const currentTemp = document.querySelector('#temperature');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
+const windSpeed = document.querySelector('#wind-speed');
 
 const url = `https://api.openweathermap.org/data/2.5/weather?q=Manassa&units=imperial&appid=f3e31394eb86ed958067f299ae42b4c7`;
 
@@ -27,6 +28,8 @@ function displayResults(weatherData) {
 
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
+
+    windSpeed.innerHTML = weatherData.wind.speed;
        
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
