@@ -1,14 +1,8 @@
 
 /* COLORS:
-    BLUE
-    background-color: rgb(171, 188, 203);
-    color: black;
-    GREEN
-    background-color: rgb(39, 64, 45);
-    color: white;
-    DK-BLUE
-    background-color: rgb(40, 62, 130);
-    color: white;
+    BLUE: rgb(171, 188, 203)
+    GREEN: rgb(171, 211, 180)
+    DK-BLUE: rgb(40, 62, 130)
 */
 
 /* CSS for all pages */
@@ -122,8 +116,8 @@ nav {
 footer {
     display: flex;
     flex-direction: column;
-    background-color: rgb(39, 64, 45);
-    color: white;
+    background-color: rgb(171, 211, 180);
+    color: black;
     text-align: center;
 }
 
