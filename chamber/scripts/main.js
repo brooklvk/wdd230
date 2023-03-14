@@ -5,6 +5,8 @@ const icon = document.querySelector(".menu");
 
 icon.addEventListener("click", () => {nav.classList.toggle("responsive")}, false);
 
+icon.addEventListener("click", () => {document.querySelector(".centerp").style.top="115%"});
+
 // Date in header 
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(now);

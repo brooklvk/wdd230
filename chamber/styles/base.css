@@ -143,10 +143,14 @@ main {
     background-color: rgb(171, 188, 203);
     padding: 10px;
     margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #hero img {
     width: 100%;
+    max-width: 900px;
     height: auto;
     position: relative;
     text-align: center;
@@ -160,7 +164,7 @@ main {
     font-weight: 700;
     position: absolute;
     top: 70%;
-    left: 55%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -302,6 +306,10 @@ section img {
         grid-column: 1/3;
     }
 
+    .centerp {
+        top: 75%;
+    }
+
     .img-three {
         width: 40%;
     }
@@ -402,6 +410,10 @@ section img {
     #hero {
         grid-template-columns: 1fr 1fr 1fr;
         grid-column: 1/4;
+    }
+
+    .centerp {
+        top: 90%;
     }
 
     .img-three {
