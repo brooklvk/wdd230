@@ -15,6 +15,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 16pt;
+    font-weight: 400;
 }
 
 #message {
@@ -138,16 +139,37 @@ main {
 
 /* CSS for index.html */
 
-#hero, #news, #events, #weather, #join, #spotlights {
+#hero {
     background-color: rgb(171, 188, 203);
-    color: black;
-    text-align: center;
     padding: 10px;
     margin: 10px 0;
 }
 
 #hero img {
     width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.centerp {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    font-size: 2em;
+    font-weight: 700;
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+#news, #events, #weather, #join, #spotlights {
+    background-color: rgb(171, 188, 203);
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 #weather-icon {
@@ -277,8 +299,6 @@ section img {
     }
     
     #hero {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         grid-column: 1/3;
     }
 
