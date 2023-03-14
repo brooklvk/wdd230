@@ -29,7 +29,7 @@ async function apiFetch() {
 
 function displayResults(weatherData) {
     const temp = weatherData.main.temp;
-    temperature.innerHTML = `${temp.toFixed(0)}`;;
+    temperature.innerHTML = `${temp.toFixed(0) + "&deg;F"}`;
 
     const speed = weatherData.wind.speed;
     windSpeed.innerHTML = speed;
@@ -40,11 +40,13 @@ function displayResults(weatherData) {
     weatherIcon.setAttribute("alt", desc);
     caption.textContent = desc;
 
-    let chill = "N/A";
     if (temp <= 50 && speed > 3) {
-        chill = Math.floor(35.74 + 0.6215 * temp - 35.75 * speed ** 0.16 + 0.4275 * temp * speed ** 0.16);
+        let chill = Math.floor(35.74 + 0.6215 * temp - 35.75 * speed ** 0.16 + 0.4275 * temp * speed ** 0.16);
+        windChill.textContent = chill + "&deg;F";
     }
-    windChill.textContent = chill;
+    else {
+        windChill.textContent = "N/A";
+    }
 }
 
 apiFetch();
