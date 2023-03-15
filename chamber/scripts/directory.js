@@ -25,7 +25,7 @@ const displayBusinesses = (businesses) => {
         address.textContent = `${business.address}`;
         phone.textContent = `${business.phone}`;
         url.textContent = `${business.url}`;
-        membership.textContent = `${business.membership}`;
+        membership.textContent = `Membership: ${business.membership}`;
 
         image.setAttribute("src", business.img);
         image.setAttribute("alt", business.alt);

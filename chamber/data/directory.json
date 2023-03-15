@@ -7,7 +7,7 @@
             "phone": "800-275-8777",
             "url": "https://www.usps.com",
             "img": "images/mail-truck.jpg",
-            "membership": "Membership: Bronze",
+            "membership": "Bronze",
             "alt": "mail truck USPS"
         }, 
         {
@@ -16,7 +16,7 @@
             "phone": "719-843-5500",
             "url": "",
             "img": "images/restaurant.jpg",
-            "membership": "Membership: Silver", 
+            "membership": "Silver", 
             "alt": "restaurant table"
         }, 
         {
@@ -25,7 +25,7 @@
             "phone": "719-843-5880",
             "url": "https://www.standardservicellc.com/",
             "img": "images/gas-station.jpg",
-            "membership": "Membership: Gold",
+            "membership": "Gold",
             "alt": "gas station"
         },
         {
@@ -34,7 +34,7 @@
             "phone": "333-333-3333",
             "url": "",
             "img": "images/old-truck.jpg",
-            "membership": "Membership: Gold",
+            "membership": "Gold",
             "alt": "old truck repair"
         },
         {
@@ -43,7 +43,7 @@
             "phone": "333-333-3333",
             "url": "",
             "img": "images/pizza.jpg",
-            "membership": "Membership: Silver",
+            "membership": "Silver",
             "alt": "pizza"
         },
         {
@@ -52,7 +52,7 @@
             "phone": "333-333-3333",
             "url": "",
             "img": "images/jewelry-rings.jpg",
-            "membership": "Membership: Bronze",
+            "membership": "Bronze",
             "alt": "jewelry case rings"
         },
         {
@@ -61,7 +61,7 @@
             "phone": "333-333-3333",
             "url": "",
             "img": "images/grocery.jpg",
-            "membership": "Membership: Bronze",
+            "membership": "Bronze",
             "alt": "grocery store market"
         },
         {
@@ -70,7 +70,7 @@
             "phone": "333-333-3333",
             "url": "",
             "img": "images/sandwich.jpg",
-            "membership": "Membership: Silver",
+            "membership": "Silver",
             "alt": "sandwich on a plate"
         }
     ]
