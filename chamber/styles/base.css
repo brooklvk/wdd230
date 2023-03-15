@@ -1,7 +1,7 @@
 
 /* COLORS:
     BLUE: rgb(171, 188, 203)
-    GREEN: rgb(171, 211, 180)
+    GREEN: rgb(64, 99, 72)
     DK-BLUE: rgb(40, 62, 130)
 */
 
@@ -116,8 +116,8 @@ nav {
 footer {
     display: flex;
     flex-direction: column;
-    background-color: rgb(171, 211, 180);
-    color: black;
+    background-color: rgb(64, 99, 72);
+    color: white;
     text-align: center;
 }
 

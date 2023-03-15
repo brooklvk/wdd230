@@ -42,10 +42,10 @@ function displayResults(weatherData) {
 
     if (temp <= 50 && speed > 3) {
         let chill = Math.floor(35.74 + 0.6215 * temp - 35.75 * speed ** 0.16 + 0.4275 * temp * speed ** 0.16);
-        windChill.textContent = chill + "&deg;F";
+        windChill.innerHTML = `${chill + "&deg;F"}`;
     }
     else {
-        windChill.textContent = "N/A";
+        windChill.innerHTML = "N/A";
     }
 }
 
