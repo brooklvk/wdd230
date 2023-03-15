@@ -2,8 +2,8 @@
 //const directory = `https://brooklvk.github.io/wdd230/chamber/data/directory.json`;
 const directory = `data/directory.json`;
 
-//HTML: div #spotlights, divs #spotlight1 etc 
-//CSS: #spotlights, #spotlight1 etc, #spotlight1 p etc 
+//HTML: 
+//CSS: 
 
 const numBusinesses = 8;
 
@@ -25,42 +25,34 @@ const displayBusinesses = (businesses) => {
             
             let randBusiness = membershipFiltered[randIndex];
 
-            const spotlights = document.querySelector("#spotlights");
+            const spotlights = document.querySelector(".spotlights");
 
-            let spotlight1 = document.createElement("div");
-            spotlight1.setAttribute("id", "spotlight1");
+            let spotlight = document.createElement("div");
+            spotlight.setAttribute("class", "spotlight1");
 
-            let spotlight1Name = document.createElement("h2");
-            let spotlight1Info = document.createElement("p");
-            let spotlight1Image = document.createElement("img");
+            let spotlightName = document.createElement("h2");
+            let spotlightInfo = document.createElement("p");
+            let spotlightImage = document.createElement("img");
 
-            spotlight1Name.innerHTML = randBusiness.name;
-            spotlight1Info.innerHTML = randBusiness.phone;
-            spotlight1Image.setAttribute("src", randBusiness.img);
-            spotlight1Image.setAttribute("alt", randBusiness.alt);
-            spotlight1Image.setAttribute("loading", "lazy");
-            spotlight1Image.setAttribute("width", "340");
-            spotlight1Image.setAttribute("height", "auto");
-            spotlight1Image.src = `${randBusiness.img}`;
+            spotlightName.innerHTML = `Business Spotlight: ${randBusiness.name}`;
+            spotlightInfo.innerHTML = randBusiness.phone;
+            spotlightImage.setAttribute("src", randBusiness.img);
+            spotlightImage.setAttribute("alt", randBusiness.alt);
+            spotlightImage.setAttribute("loading", "lazy");
+            spotlightImage.setAttribute("width", "340");
+            spotlightImage.setAttribute("height", "auto");
+            spotlightImage.src = `${randBusiness.img}`;
 
-            spotlight1.appendChild(spotlight1Name);
-            spotlight1.appendChild(spotlight1Info);
-            spotlight1.appendChild(spotlight1Image);
+            spotlight.appendChild(spotlightName);
+            spotlight.appendChild(spotlightInfo);
+            spotlight.appendChild(spotlightImage);
 
-            spotlights.appendChild(spotlight1);
+            spotlights.appendChild(spotlight);
 
             selections++;
             indexes.push(randIndex);
         }
     }
-
-
-
-    // const spotlight2Name = document.querySelector("#spotlight2 h2");
-    // const spotlight2Info = document.querySelector("#spotlight2 p");
-
-    // const spotlight3Name = document.querySelector("#spotlight3 h2");
-    // const spotlight3Info = document.querySelector("#spotlight3 p");
 }
 
 getBusinessData();

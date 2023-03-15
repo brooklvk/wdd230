@@ -157,7 +157,7 @@ footer {
     margin: 8px auto;
 }
 
-#news, #events, #weather, #join, #spotlights {
+#news, #events, #weather, #join, .spotlights {
     background-color: rgb(171, 188, 203);
     color: black;
     text-align: center;
@@ -239,13 +239,13 @@ form input.submitBtn {
 }
 
 /* CSS for directory.html and index.html spotlights */
-.businesses, #spotlight1 {
+.businesses, .spotlight {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 5px;
 }
 
-section, #spotlight1, #spotlight2, #spotlight3 {
+section, .spotlight {
     background-color: rgb(171, 188, 203);
     grid-auto-flow: row;
     display: flex;
@@ -256,7 +256,7 @@ section, #spotlight1, #spotlight2, #spotlight3 {
     padding: 10px;
 }
 
-section img, #spotlight1 img, #spotlight2 img, #spotlight3 img {
+section img, .spotlight1 img {
     margin: 0 auto;
 }
 
@@ -275,7 +275,7 @@ section img, #spotlight1 img, #spotlight2 img, #spotlight3 img {
         grid-template-columns: 1fr 1fr;
     }
 
-    #hero, #news, #events, #weather, #join, #spotlights {
+    #hero, #news, #events, #weather, #join, .spotlights {
         margin: 10px;
     }
     
@@ -292,14 +292,14 @@ section img, #spotlight1 img, #spotlight2 img, #spotlight3 img {
     }
     
     #weather {
-        grid-column: 2/3;
+        grid-column: 1/2;
     }
     
     #join {
         grid-column: 2/3;
     }
     
-    #spotlights {
+    .spotlights {
         grid-column: 1/2;
     }
 
@@ -380,7 +380,7 @@ section img, #spotlight1 img, #spotlight2 img, #spotlight3 img {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    #hero, #news, #events, #weather, #join, #spotlights {
+    #hero, #news, #events, #weather, #join, .spotlights {
         margin: 10px;
     }
     
@@ -413,7 +413,7 @@ section img, #spotlight1 img, #spotlight2 img, #spotlight3 img {
         grid-column: 1/4;
     }
     
-    #spotlights {
+    .spotlights {
         grid-column: 1/4;
     }
 
