@@ -6,72 +6,64 @@
             "address": "413 Main",
             "phone": "800-275-8777",
             "url": "weburl",
-            "img": "image url",
-            "membership": "Bronze"
+            "img": "images/mail-truck.jpg",
+            "membership": "Membership: Bronze"
         }, 
         {
             "name": "Val's Restaurant",
             "address": "501 Main",
             "phone": "719-843-5500",
             "url": "weburl",
-            "img": "image url",
-            "membership": "Silver"
+            "img": "images/restaurant.jpg",
+            "membership": "Membership: Silver"
         }, 
         {
             "name": "Standard Service Gas Station",
             "address": "418 Main",
             "phone": "719-843-5880",
             "url": "weburl",
-            "img": "image url",
-            "membership": "Gold"
+            "img": "images/gas-station.jpg",
+            "membership": "Membership: Gold"
         },
         {
             "name": "Auto Shop",
             "address": "123 Main",
             "phone": "333-333-3333",
             "url": "weburl",
-            "img": "image url",
-            "membership": "Gold"
+            "img": "images/old-truck.jpg",
+            "membership": "Membership: Gold"
         },
         {
-            "name": "Dollar General",
+            "name": "The Pizza Place",
             "address": "123 Main",
             "phone": "333-333-3333",
             "url": "weburl",
-            "img": "image url",
-            "membership": "Silver"
+            "img": "images/pizza.jpg",
+            "membership": "Membership: Silver"
         },
         {
             "name": "Jewelry Store",
             "address": "123 Main",
             "phone": "333-333-3333",
             "url": "weburl",
-            "img": "image url",
-            "membership": "Bronze"
+            "img": "images/jewelry-rings.jpg",
+            "membership": "Membership: Bronze"
         },
         {
             "name": "Manassa Market",
             "address": "123 Main",
             "phone": "333-333-3333",
             "url": "weburl",
-            "img": "image url",
-            "membership": "Bronze"
+            "img": "images/grocery.jpg",
+            "membership": "Membership: Bronze"
         },
         {
-            "name": "Dance Studio",
+            "name": "The Sandwich Place",
             "address": "123 Main",
             "phone": "333-333-3333",
             "url": "weburl",
-            "img": "image url",
-            "membership": "Bronze"
-        },
-        {
-            "name": "Subway",
-            "address": "123 Main",
-            "phone": "333-333-3333",
-            "url": "weburl",
-            "img": "image url",
-            "membership": "Gold"
+            "img": "images/sandwich.jpg",
+            "membership": "Membership: Silver"
         }
     ]
 }

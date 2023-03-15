@@ -1,14 +1,12 @@
 
-const visitElement = document.querySelector("#visit");
+// Visit message 
+let visit = now.getMinutes();
+localStorage.setItem("visit", visit);
 
-let numberOfVisits = localStorage.getItem("numberOfVisits");
+let difference = now.getMinutes() - visit;
+localStorage.setItem("difference", difference);
 
-if (!numberOfVisits) {
-    numberOfVisits = 0;
-  }
+document.querySelector("#visit").innerHTML = difference;
 
-numberOfVisits = +numberOfVisits + 1; 
+//localStorage.setItem("numberOfVisits", 0);
 
-localStorage.setItem("numberOfVisits", numberOfVisits);
-
-visitElement.innerHTML = numberOfVisits;
