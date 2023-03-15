@@ -170,11 +170,6 @@ footer {
     height: auto;
 }
 
-#spotlight1, #spotlight2, #spotlight3 {
-    padding: 10px;
-    margin: 10px 0;
-}
-
 /* CSS for discover.html */
 .visit-msg {
     font-size: 1.2em;
@@ -244,13 +239,13 @@ form input.submitBtn {
 }
 
 /* CSS for directory.html */
-.businesses {
+.businesses, #spotlight1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 5px;
 }
 
-section {
+section, #spotlight1, #spotlight2, #spotlight3 {
     background-color: rgb(171, 188, 203);
     grid-auto-flow: row;
     display: flex;
@@ -261,7 +256,7 @@ section {
     padding: 10px;
 }
 
-section img {
+section img, #spotlight1 img, #spotlight2 img, #spotlight3 img {
     margin: 0 auto;
 }
 
@@ -273,6 +268,11 @@ section img {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     #hero, #news, #events, #weather, #join, #spotlights {
@@ -374,6 +374,11 @@ section img {
 	.navigation li:first-child {
 		display: none;
 	}
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     #hero, #news, #events, #weather, #join, #spotlights {
         margin: 10px;
