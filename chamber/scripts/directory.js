@@ -1,6 +1,6 @@
 
 const directory = `https://brooklvk.github.io/wdd230/chamber/data/directory.json`;
-// const directory = `data/directory.json`;
+//const directory = `data/directory.json`;
 
 async function getBusinessData() {
     const response = await fetch(directory);
