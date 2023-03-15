@@ -2,6 +2,10 @@
 //const directory = `https://brooklvk.github.io/wdd230/chamber/data/directory.json`;
 const directory = `data/directory.json`;
 
+//HTML: div #spotlights, divs #spotlight1 etc 
+//CSS: #spotlights, #spotlight1 etc, #spotlight1 p etc 
+
+const numBusinesses = 8;
 
 async function getBusinessData() {
     const response = await fetch(directory);
@@ -10,77 +14,53 @@ async function getBusinessData() {
     displayBusinesses(data.businesses);
 }
 
-const disyBusses = (businesses) => {
-    // const spotlights = document.querySelector("#spotlights");
-
-    const spotlight1Name = document.querySelector("#spotlight1 h2");
-    const spotlight1Info = document.querySelector("#spotlight1 p");
-
-    const spotlight2Name = document.querySelector("#spotlight2 h2");
-    const spotlight2Info = document.querySelector("#spotlight2 p");
-
-    const spotlight3Name = document.querySelector("#spotlight3 h2");
-    const spotlight3Info = document.querySelector("#spotlight3 p");
-
-    chooseBusiness(businesses);
-    
-
-    // add that business info to 1 
-    spotlight1Name.innerHTML = randomBusiness.name;
-    spotlight1Info.innerHTML = `Phone: ${randomBusiness.phone}`;
-
-    // same for 2 and 3 
-
-}
-
 const displayBusinesses = (businesses) => {
-    const cards = document.querySelector("#spotlights");
+    let membershipFiltered = businesses.filter((business) => business.membership == "Gold" || business.membership == "Silver");
+    let indexes = [];
+    let selections = 0;
+    while (selections < 3) {
+        let randIndex = Math.floor(Math.random() * membershipFiltered.length);
 
-    businesses.forEach((business) => {
-        let card = document.querySelector("#spotlight1");
-        let h2 = document.createElement("h2");
-        let address = document.createElement("p");
-        let phone = document.createElement("p");
-        let url = document.createElement("p");
-        let membership = document.createElement("p");
-        let image = document.createElement("img");
+        if (!indexes.includes(randIndex)) {
+            
+            let randBusiness = membershipFiltered[randIndex];
 
-        h2.textContent = `${business.name}`;
-        address.textContent = `${business.address}`;
-        phone.textContent = `${business.phone}`;
-        url.textContent = `${business.url}`;
-        membership.textContent = `Membership: ${business.membership}`;
+            const spotlights = document.querySelector("#spotlights");
 
-        image.setAttribute("src", business.img);
-        image.setAttribute("alt", business.alt);
-        image.setAttribute("loading", "lazy");
-        image.setAttribute("width", "340");
-        image.setAttribute("height", "auto");
+            let spotlight1 = document.createElement("div");
+            spotlight1.setAttribute("id", "spotlight1");
 
-        card.appendChild(h2);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(url);
-        card.appendChild(membership);
-        card.appendChild(image);
-  
-        cards.appendChild(card);
-    })
-}
+            let spotlight1Name = document.createElement("h2");
+            let spotlight1Info = document.createElement("p");
+            let spotlight1Image = document.createElement("img");
 
-const chooseBusiness = (businesses) => {
-    // choose a random business 
-    let random = Math.floor(Math.random() * (9 - 1) + 1);
-    let randomBusiness = businesses[random];
+            spotlight1Name.innerHTML = randBusiness.name;
+            spotlight1Info.innerHTML = randBusiness.phone;
+            spotlight1Image.setAttribute("src", randBusiness.img);
+            spotlight1Image.setAttribute("alt", randBusiness.alt);
+            spotlight1Image.setAttribute("loading", "lazy");
+            spotlight1Image.setAttribute("width", "340");
+            spotlight1Image.setAttribute("height", "auto");
+            spotlight1Image.src = `${randBusiness.img}`;
 
-    if (randomBusiness.membership == "Gold" || randomBusiness.membership == "Silver") {
-        
+            spotlight1.appendChild(spotlight1Name);
+            spotlight1.appendChild(spotlight1Info);
+            spotlight1.appendChild(spotlight1Image);
+
+            spotlights.appendChild(spotlight1);
+
+            selections++;
+            indexes.push(randIndex);
+        }
     }
 
-    else {
-        chooseBusiness(businesses);
-    }
 
+
+    // const spotlight2Name = document.querySelector("#spotlight2 h2");
+    // const spotlight2Info = document.querySelector("#spotlight2 p");
+
+    // const spotlight3Name = document.querySelector("#spotlight3 h2");
+    // const spotlight3Info = document.querySelector("#spotlight3 p");
 }
 
 getBusinessData();

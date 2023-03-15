@@ -238,7 +238,7 @@ form input.submitBtn {
     margin: 20px auto;
 }
 
-/* CSS for directory.html */
+/* CSS for directory.html and index.html spotlights */
 .businesses, #spotlight1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
