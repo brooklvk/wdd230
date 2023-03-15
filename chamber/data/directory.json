@@ -5,7 +5,7 @@
             "name": "USPS Post Office",
             "address": "413 Main",
             "phone": "800-275-8777",
-            "url": "weburl",
+            "url": "https://www.usps.com",
             "img": "images/mail-truck.jpg",
             "membership": "Membership: Bronze",
             "alt": "mail truck USPS"
@@ -14,7 +14,7 @@
             "name": "Val's Restaurant",
             "address": "501 Main",
             "phone": "719-843-5500",
-            "url": "weburl",
+            "url": "",
             "img": "images/restaurant.jpg",
             "membership": "Membership: Silver", 
             "alt": "restaurant table"
@@ -23,7 +23,7 @@
             "name": "Standard Service Gas Station",
             "address": "418 Main",
             "phone": "719-843-5880",
-            "url": "weburl",
+            "url": "https://www.standardservicellc.com/",
             "img": "images/gas-station.jpg",
             "membership": "Membership: Gold",
             "alt": "gas station"
@@ -32,7 +32,7 @@
             "name": "Auto Shop",
             "address": "123 Main",
             "phone": "333-333-3333",
-            "url": "weburl",
+            "url": "",
             "img": "images/old-truck.jpg",
             "membership": "Membership: Gold",
             "alt": "old truck repair"
@@ -41,7 +41,7 @@
             "name": "The Pizza Place",
             "address": "123 Main",
             "phone": "333-333-3333",
-            "url": "weburl",
+            "url": "",
             "img": "images/pizza.jpg",
             "membership": "Membership: Silver",
             "alt": "pizza"
@@ -50,7 +50,7 @@
             "name": "Jewelry Store",
             "address": "123 Main",
             "phone": "333-333-3333",
-            "url": "weburl",
+            "url": "",
             "img": "images/jewelry-rings.jpg",
             "membership": "Membership: Bronze",
             "alt": "jewelry case rings"
@@ -59,7 +59,7 @@
             "name": "Manassa Market",
             "address": "123 Main",
             "phone": "333-333-3333",
-            "url": "weburl",
+            "url": "",
             "img": "images/grocery.jpg",
             "membership": "Membership: Bronze",
             "alt": "grocery store market"
@@ -68,7 +68,7 @@
             "name": "The Sandwich Place",
             "address": "123 Main",
             "phone": "333-333-3333",
-            "url": "weburl",
+            "url": "",
             "img": "images/sandwich.jpg",
             "membership": "Membership: Silver",
             "alt": "sandwich on a plate"
