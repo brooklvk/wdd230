@@ -7,7 +7,8 @@
             "phone": "800-275-8777",
             "url": "weburl",
             "img": "images/mail-truck.jpg",
-            "membership": "Membership: Bronze"
+            "membership": "Membership: Bronze",
+            "alt": "mail truck USPS"
         }, 
         {
             "name": "Val's Restaurant",
@@ -15,7 +16,8 @@
             "phone": "719-843-5500",
             "url": "weburl",
             "img": "images/restaurant.jpg",
-            "membership": "Membership: Silver"
+            "membership": "Membership: Silver", 
+            "alt": "restaurant table"
         }, 
         {
             "name": "Standard Service Gas Station",
@@ -23,7 +25,8 @@
             "phone": "719-843-5880",
             "url": "weburl",
             "img": "images/gas-station.jpg",
-            "membership": "Membership: Gold"
+            "membership": "Membership: Gold",
+            "alt": "gas station"
         },
         {
             "name": "Auto Shop",
@@ -31,7 +34,8 @@
             "phone": "333-333-3333",
             "url": "weburl",
             "img": "images/old-truck.jpg",
-            "membership": "Membership: Gold"
+            "membership": "Membership: Gold",
+            "alt": "old truck repair"
         },
         {
             "name": "The Pizza Place",
@@ -39,7 +43,8 @@
             "phone": "333-333-3333",
             "url": "weburl",
             "img": "images/pizza.jpg",
-            "membership": "Membership: Silver"
+            "membership": "Membership: Silver",
+            "alt": "pizza"
         },
         {
             "name": "Jewelry Store",
@@ -47,7 +52,8 @@
             "phone": "333-333-3333",
             "url": "weburl",
             "img": "images/jewelry-rings.jpg",
-            "membership": "Membership: Bronze"
+            "membership": "Membership: Bronze",
+            "alt": "jewelry case rings"
         },
         {
             "name": "Manassa Market",
@@ -55,7 +61,8 @@
             "phone": "333-333-3333",
             "url": "weburl",
             "img": "images/grocery.jpg",
-            "membership": "Membership: Bronze"
+            "membership": "Membership: Bronze",
+            "alt": "grocery store market"
         },
         {
             "name": "The Sandwich Place",
@@ -63,7 +70,8 @@
             "phone": "333-333-3333",
             "url": "weburl",
             "img": "images/sandwich.jpg",
-            "membership": "Membership: Silver"
+            "membership": "Membership: Silver",
+            "alt": "sandwich on a plate"
         }
     ]
 }
