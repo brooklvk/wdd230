@@ -182,16 +182,13 @@ footer {
     text-align: center;
 }
 
+
 .images img {
-    width: 100%;
+    width: 300px;
     height: auto;
     border: 5px solid black;
     padding: 5px;
     margin: 20px auto;
-}
-
-.images img:last-of-type, .images img:first-of-type {
-    width: 80%;
 }
 
 /* CSS for join.html */
@@ -311,17 +308,21 @@ section img, .spotlight img {
         width: 340px;
     }
 
-    .images {
-        width: 70%;
-        margin: 0 auto;
+    .visit-msg, .images {
+        grid-column: 1/3;
     }
 
     .images img {
+        width: 500px;
         transition: transform .2s;
     }
 
     .images img:hover {
-        transform: scale(1.5);
+        transform: scale(1.1);
+    }
+
+    .images img:last-of-type, .images img:first-of-type {
+        width: 450px;
     }
 
     footer {
@@ -442,13 +443,10 @@ section img, .spotlight img {
         padding: 10px;
     }
 
-    .images {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        margin: 0 auto;
+    .visit-msg, .images {
+        grid-column: 1/4;
     }
-    
+
     .images img {
         transition: transform .2s;
     }
