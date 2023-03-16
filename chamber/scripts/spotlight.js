@@ -18,7 +18,7 @@ const displayBusinesses = (businesses) => {
     let membershipFiltered = businesses.filter((business) => business.membership == "Gold" || business.membership == "Silver");
     let indexes = [];
     let selections = 0;
-    while (selections < 3) {
+    while (selections < 2) {
         let randIndex = Math.floor(Math.random() * membershipFiltered.length);
 
         if (!indexes.includes(randIndex)) {
