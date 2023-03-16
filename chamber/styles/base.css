@@ -29,7 +29,6 @@ main {
 .top {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .logo-h {
@@ -40,7 +39,6 @@ main {
 }
 
 .title {
-    display: block;
     text-align: center;
     padding: 10px;
 }
@@ -282,6 +280,19 @@ form input.submitBtn {
 
 @media only screen and (min-width: 730px) {
     /* medium view -- with hamburger and links */
+
+    .top {
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+
+    .logo-h {
+        grid-column: 1/2;
+    }
+
+    .title {
+        grid-column: 2/3;
+    }
 
     .navigation {
         display: flex;
