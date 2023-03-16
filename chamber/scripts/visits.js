@@ -1,12 +1,11 @@
 
+const now = new Date();
+
 // Visit message 
-let visit = now.getMinutes();
-localStorage.setItem("visit", visit);
+let visit = now;
+localStorage.setItem("numberOfVisits", visit);
 
-let difference = now.getMinutes() - visit;
-localStorage.setItem("difference", difference);
-
-document.querySelector("#visit").innerHTML = difference;
+document.querySelector("#visit").innerHTML = visit;
 
 //localStorage.setItem("numberOfVisits", 0);
 
