@@ -33,6 +33,7 @@ const displayBusinesses = (businesses) => {
         image.setAttribute("width", "340");
         image.setAttribute("height", "auto");
 
+        card.setAttribute("class", "card");
         card.appendChild(h2);
         card.appendChild(address);
         card.appendChild(phone);
