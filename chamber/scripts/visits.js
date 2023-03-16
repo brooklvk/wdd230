@@ -30,3 +30,24 @@ numberOfVisits = +numberOfVisits + 1;
 localStorage.setItem("numberOfVisits", numberOfVisits);
 
 visitElement.innerHTML = numberOfVisits;
+
+
+ // Visit message 
+ var numberOfVisits = localStorage.getItem("numberOfVisits");
+
+ if (!numberOfVisits) {
+     numberOfVisits = 0;
+ }
+ let visit = Date.now().getMinutes();
+ localStorage.setItem("visit", visit);
+ 
+ numberOfVisits = +numberOfVisits + 1; 
+ let difference = Date.now().getMinutes() - visit;
+ localStorage.setItem("difference", difference);
+ 
+ localStorage.setItem("numberOfVisits", numberOfVisits);
+ document.querySelector("#visit").innerHTML = numberOfVisits;
+ document.querySelector("#visit").innerHTML = difference;
+ 
+ 
+ // localStorage.setItem("numberOfVisits", 0);
