@@ -31,7 +31,7 @@
         {
             "name": "Auto Shop",
             "address": "123 Main",
-            "phone": "333-333-3333",
+            "phone": "811-418-1141",
             "url": "",
             "img": "images/old-truck.jpg",
             "membership": "Gold",
@@ -40,7 +40,7 @@
         {
             "name": "The Pizza Place",
             "address": "123 Main",
-            "phone": "333-333-3333",
+            "phone": "811-418-1141",
             "url": "",
             "img": "images/pizza.jpg",
             "membership": "Silver",
@@ -49,7 +49,7 @@
         {
             "name": "Jewelry Store",
             "address": "123 Main",
-            "phone": "333-333-3333",
+            "phone": "811-418-1141",
             "url": "",
             "img": "images/jewelry-rings.jpg",
             "membership": "Bronze",
@@ -58,7 +58,7 @@
         {
             "name": "Manassa Market",
             "address": "123 Main",
-            "phone": "333-333-3333",
+            "phone": "811-418-1141",
             "url": "",
             "img": "images/grocery.jpg",
             "membership": "Bronze",
@@ -67,7 +67,7 @@
         {
             "name": "The Sandwich Place",
             "address": "123 Main",
-            "phone": "333-333-3333",
+            "phone": "811-418-1141",
             "url": "",
             "img": "images/sandwich.jpg",
             "membership": "Silver",

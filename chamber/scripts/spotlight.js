@@ -28,7 +28,7 @@ const displayBusinesses = (businesses) => {
             const spotlights = document.querySelector(".spotlights");
 
             let spotlight = document.createElement("div");
-            spotlight.setAttribute("class", "spotlight1");
+            spotlight.setAttribute("class", "spotlight");
 
             let spotlightName = document.createElement("h2");
             let spotlightInfo = document.createElement("p");
@@ -39,7 +39,7 @@ const displayBusinesses = (businesses) => {
             spotlightImage.setAttribute("src", randBusiness.img);
             spotlightImage.setAttribute("alt", randBusiness.alt);
             spotlightImage.setAttribute("loading", "lazy");
-            spotlightImage.setAttribute("width", "340");
+            spotlightImage.setAttribute("width", "200px");
             spotlightImage.setAttribute("height", "auto");
             spotlightImage.src = `${randBusiness.img}`;
 
