@@ -121,9 +121,7 @@ footer {
     margin: 0 auto;
 }
 
-
 /* CSS for index.html */
-
 #hero {
     background-color: rgb(171, 188, 203);
     display: flex;
@@ -346,24 +344,18 @@ form input.submitBtn {
         width: 450px;
     }
 
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 90px auto;
-        text-align: justify;
-    }
-
     .logo-f {
-        grid-column: 1/3;
         margin: 0 auto;
     }
 
     .info {
-        grid-column: 1/2;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-gap: 5px;
     }
-    
-    .base {
-        grid-column: 2/3;
+
+    .info p {
+        grid-auto-flow: row;
     }
 
     #join-msg, form {
@@ -452,17 +444,13 @@ form input.submitBtn {
         width: 340px;
     }
 
-    footer {
-        display: flex;
-    }
-
-    .info, .base {
+    .base {
         display: flex;
         flex-direction: row;
     }
 
-    .info p, .base p {
-        padding: 10px;
+    .base p {
+        padding: 20px;
     }
 
     /* .visit-msg,  */
