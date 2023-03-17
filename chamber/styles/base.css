@@ -79,7 +79,7 @@ header {
 }
 
 .responsive a {
-	display: block;
+	display: none;
 }
 
 .link {
