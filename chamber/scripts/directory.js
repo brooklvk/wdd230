@@ -30,7 +30,7 @@ const displayBusinesses = (businesses) => {
         image.setAttribute("src", business.img);
         image.setAttribute("alt", business.alt);
         image.setAttribute("loading", "lazy");
-        image.setAttribute("width", "340");
+        image.setAttribute("width", "300px");
         image.setAttribute("height", "auto");
 
         card.setAttribute("class", "card");

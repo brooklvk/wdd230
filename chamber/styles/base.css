@@ -132,8 +132,7 @@ footer {
 }
 
 #hero img {
-    width: auto;
-    max-width: 400px;
+    width: 300px;
     height: auto;
     margin: 0 auto;
 }
@@ -240,7 +239,8 @@ form input.submitBtn {
     flex-direction: column;
     text-align: center;
     border: 2px solid black;
-    margin: 10px auto;
+    /* margin: 10px auto; */
+    margin: 0;
     padding: 10px;
 }
 
@@ -263,7 +263,7 @@ form input.submitBtn {
     border: 2px solid black;
     margin: 10px auto;
     padding: 10px;
-    max-width: 400px;
+    width: 300px;
 }
 
 .spotlight img {
