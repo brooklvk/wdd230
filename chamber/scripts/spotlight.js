@@ -1,9 +1,6 @@
 
-//const directory = `https://brooklvk.github.io/wdd230/chamber/data/directory.json`;
-const directory = `data/directory.json`;
-
-//HTML: 
-//CSS: 
+const directory = `https://brooklvk.github.io/wdd230/chamber/data/directory.json`;
+//const directory = `data/directory.json`;
 
 const numBusinesses = 8;
 
@@ -18,7 +15,7 @@ const displayBusinesses = (businesses) => {
     let membershipFiltered = businesses.filter((business) => business.membership == "Gold" || business.membership == "Silver");
     let indexes = [];
     let selections = 0;
-    while (selections < 2) {
+    while (selections < 3) {
         let randIndex = Math.floor(Math.random() * membershipFiltered.length);
 
         if (!indexes.includes(randIndex)) {
