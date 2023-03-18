@@ -295,6 +295,11 @@ form input.submitBtn {
     width: 300px;
 }
 
+/* CSS for contact page */
+#contact-info {
+    border: 15px solid rgb(171, 188, 203);
+    text-align: center;
+}
 
 @media only screen and (min-width: 800px) {
     /* medium view -- with hamburger and links */
@@ -399,6 +404,10 @@ form input.submitBtn {
     }
 
     .membership-info {
+        grid-column: 1/4;
+    }
+
+    #contact-info {
         grid-column: 1/4;
     }
 }
