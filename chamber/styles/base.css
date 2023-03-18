@@ -89,7 +89,7 @@ header {
 }
 
 .link:hover {
-    background-color: rgb(94, 66, 88);
+    background-color: rgb(64, 99, 72);
     color: white;
 }
 
@@ -180,6 +180,11 @@ footer {
 /* CSS for join.html */
 #join-msg {
     text-align: center;
+}
+
+.membership-info {
+    text-align: center;
+    margin: 0 auto;
 }
 
 fieldset {
@@ -361,6 +366,10 @@ form input.submitBtn {
     #join-msg, form {
         grid-column: 1/4;
     }
+
+    .membership-info {
+        grid-column: 1/4;
+    }
 }
 
 @media only screen and (min-width: 950px) {
@@ -464,5 +473,9 @@ form input.submitBtn {
 
     .images img:hover {
         transform: scale(1.1);
+    }
+
+    .membership-info {
+        grid-column: 2/3;
     }
 }
