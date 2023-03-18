@@ -197,7 +197,7 @@ table {
 }
 
 th, td {
-    padding: 15px;
+    padding: 5px;
     margin: 0;
 }
 
@@ -211,7 +211,6 @@ caption {
 }
 
 fieldset {
-    width: 50%;
     margin: 20px auto;
 }
 
@@ -405,6 +404,10 @@ form input.submitBtn {
 
     .membership-info {
         grid-column: 1/4;
+    }
+
+    th, td {
+        padding: 15px;
     }
 
     #contact-info {
