@@ -39,7 +39,6 @@ const displayBusinesses = (businesses) => {
             spotlightImage.setAttribute("src", randBusiness.img);
             spotlightImage.setAttribute("alt", randBusiness.alt);
             spotlightImage.setAttribute("loading", "lazy");
-            spotlightImage.setAttribute("width", "200px");
             spotlightImage.setAttribute("height", "auto");
             spotlightImage.src = `${randBusiness.img}`;
 
