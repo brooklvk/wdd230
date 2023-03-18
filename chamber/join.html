@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join page for Manassa Chamber of Commerce site. ">
+    <meta name="description" content="Join page for Manassa Chamber of Commerce site.">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,13 +39,42 @@
     <main>
         <h1 id="join-msg">Join the Chamber of Commerce!</h1>
         <div class="membership-info">
-            <p>NP Membership is for non profit organizations and there is no fee.
-                Bronze Membership.
-                Silver Membership
-                Gold Membership
-                This memberships have increasing costs as well as increased benefits per level like trainings, 
-                advertising (like on the home page spotlights), event discounts, etc.
-            </p>
+            <table>
+                <thead id="memberships">
+                    <th colspan="5" id="title">Membership Options</th>
+                    <tr>
+                        <th></th>
+                        <th>Non Profit (NP)</th>
+                        <th>Bronze</th>
+                        <th>Silver</th>
+                        <th>Gold</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Annual Fee</td>
+                        <td>✖️ None</td>
+                        <td>$50</td>
+                        <td>$75</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Advertising</td>
+                        <td>✔️ Basic</td>
+                        <td>✔️ Basic</td>
+                        <td>✔️ Basic and Website</td>
+                        <td>✔️ Basic, Website and Events</td>
+                    </tr>
+                    <tr>
+                        <td>Event Discounts</td>
+                        <td>✖️ None</td>
+                        <td>✖️ None</td>
+                        <td>✔️ 20% Off Events</td>
+                        <td>✔️ 30% Off Events</td>
+                    </tr>
+                </tbody>
+                <caption>Table 1: Membership Subscription Comparison</caption>
+            </table>
         </div>
         <form method="get" action="thankyou.html">
             <fieldset>
@@ -55,7 +84,6 @@
                 <label class="style1">Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
                 <label class="style1">Phone Number* <input type="tel" name="phone" required></label>
                 <label class="style1">Business Position <input type="text" name="position" pattern=""></label>
-        
             </fieldset>
 
             <fieldset>

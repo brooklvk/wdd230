@@ -183,7 +183,31 @@ footer {
 
 .membership-info {
     text-align: center;
-    margin: 0 auto;
+    margin: 20px auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+}
+
+#memberships {
+    background-color: rgb(64, 99, 72);
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    margin: 0;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: rgb(171, 188, 203);
+}
+
+caption {
+    caption-side: bottom;
+    font-size: 14px;
 }
 
 fieldset {
@@ -489,4 +513,5 @@ form input.submitBtn {
     .membership-info {
         grid-column: 2/3;
     }
+
 }
