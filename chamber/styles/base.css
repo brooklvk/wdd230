@@ -192,8 +192,7 @@ footer {
     border: 2px solid black;
     margin: 10px auto;
     padding: 10px;
-    width: fit-content;
-    max-width: 400px;
+    max-width: fit-content;
 }
 
 .card img, .spotlight img {
@@ -339,6 +338,7 @@ form input.submitBtn {
 
     .spotlight, .card {
         margin: 10px auto;
+        max-width: 400px;
     }
 
     .images img {

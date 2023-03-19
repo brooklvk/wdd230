@@ -32,7 +32,7 @@ function displayResults(weatherData) {
     temperature.innerHTML = `${temp.toFixed(0) + "&deg;F"}`;
 
     const speed = weatherData.wind.speed;
-    windSpeed.innerHTML = speed;
+    windSpeed.innerHTML = Math.round(speed);
 
     const src = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
