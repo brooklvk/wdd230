@@ -192,7 +192,7 @@ footer {
     border: 2px solid black;
     margin: 10px auto;
     padding: 10px;
-    max-width: fit-content;
+    width: min-content;
 }
 
 .card img, .spotlight img {
