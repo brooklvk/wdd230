@@ -157,10 +157,10 @@ footer {
 
 /* CSS for discover.html */
 
-/* .visit-msg {
+.visit-msg {
     font-size: 1.2em;
     text-align: center;
-} */
+}
 
 .images {
     display: flex;
